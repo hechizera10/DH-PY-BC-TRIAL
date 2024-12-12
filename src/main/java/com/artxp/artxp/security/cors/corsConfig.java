@@ -10,9 +10,7 @@ public class corsConfig implements WebMvcConfigurer {
         registry.addMapping("/**") // Permite el mapeo CORS para todas las rutas.
                 .allowedOrigins(
                         "http://localhost:5173",
-                        "https://dh-py-fe-trial-ne1xmkkhh-maria-elena-ponces-projects.vercel.app",
-                        "https://dh-py-fe-trial-git-main-maria-elena-ponces-projects.vercel.app" // Agrega esta URL
-                )
+                        "https://dh-py-fe-trial.vercel.app/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Permite solo estos métodos HTTP.
                 .allowedHeaders("Authorization",
                         "Accept",
